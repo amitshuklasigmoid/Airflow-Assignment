@@ -1,0 +1,48 @@
+[2023-04-25T06:50:16.707+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task_on_email.send_email manual__2023-04-25T06:50:16.069863+00:00 [queued]>
+[2023-04-25T06:50:16.712+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task_on_email.send_email manual__2023-04-25T06:50:16.069863+00:00 [queued]>
+[2023-04-25T06:50:16.713+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T06:50:16.713+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 6
+[2023-04-25T06:50:16.713+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T06:50:16.721+0000] {taskinstance.py:1309} INFO - Executing <Task(EmailOperator): send_email> on 2023-04-25 06:50:16.069863+00:00
+[2023-04-25T06:50:16.724+0000] {standard_task_runner.py:55} INFO - Started process 52 to run task
+[2023-04-25T06:50:16.727+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'task_on_email', 'send_email', 'manual__2023-04-25T06:50:16.069863+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/Task2.py', '--cfg-path', '/tmp/tmputti0z2y']
+[2023-04-25T06:50:16.727+0000] {standard_task_runner.py:83} INFO - Job 79: Subtask send_email
+[2023-04-25T06:50:16.774+0000] {task_command.py:389} INFO - Running <TaskInstance: task_on_email.send_email manual__2023-04-25T06:50:16.069863+00:00 [running]> on host bd5648371af0
+[2023-04-25T06:50:16.820+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=task_on_email
+AIRFLOW_CTX_TASK_ID=send_email
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-25T06:50:16.069863+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-25T06:50:16.069863+00:00
+[2023-04-25T06:50:16.829+0000] {base.py:73} INFO - Using connection ID 'email_smtp' for task execution.
+[2023-04-25T06:50:16.829+0000] {email.py:268} INFO - Email alerting: attempt 1
+[2023-04-25T06:50:16.830+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/email.py", line 87, in execute
+    custom_headers=self.custom_headers,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 91, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 152, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 270, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 317, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+[2023-04-25T06:50:16.838+0000] {taskinstance.py:1332} INFO - Marking task as UP_FOR_RETRY. dag_id=task_on_email, task_id=send_email, execution_date=20230425T065016, start_date=20230425T065016, end_date=20230425T065016
+[2023-04-25T06:50:16.853+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 79 for task send_email ([Errno 99] Cannot assign requested address; 52)
+[2023-04-25T06:50:16.903+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-04-25T06:50:16.917+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

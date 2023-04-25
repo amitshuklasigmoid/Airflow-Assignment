@@ -1,0 +1,22 @@
+[2023-04-25T07:59:01.459+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: SlackAlertTestDag.task1 manual__2023-04-25T07:59:00.879312+00:00 [queued]>
+[2023-04-25T07:59:01.466+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: SlackAlertTestDag.task1 manual__2023-04-25T07:59:00.879312+00:00 [queued]>
+[2023-04-25T07:59:01.467+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T07:59:01.467+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-25T07:59:01.468+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T07:59:01.482+0000] {taskinstance.py:1309} INFO - Executing <Task(_PythonDecoratedOperator): task1> on 2023-04-25 07:59:00.879312+00:00
+[2023-04-25T07:59:01.487+0000] {standard_task_runner.py:55} INFO - Started process 1685 to run task
+[2023-04-25T07:59:01.490+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'SlackAlertTestDag', 'task1', 'manual__2023-04-25T07:59:00.879312+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/Task3.py', '--cfg-path', '/tmp/tmp0flaptl_']
+[2023-04-25T07:59:01.492+0000] {standard_task_runner.py:83} INFO - Job 111: Subtask task1
+[2023-04-25T07:59:01.550+0000] {task_command.py:389} INFO - Running <TaskInstance: SlackAlertTestDag.task1 manual__2023-04-25T07:59:00.879312+00:00 [running]> on host d51842477fac
+[2023-04-25T07:59:01.613+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=SlackAlertTestDag
+AIRFLOW_CTX_TASK_ID=task1
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-25T07:59:00.879312+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-25T07:59:00.879312+00:00
+[2023-04-25T07:59:01.614+0000] {logging_mixin.py:137} INFO - Hello world from first task. I am failing :(
+[2023-04-25T07:59:01.662+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-04-25T07:59:01.679+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,31 @@
+[2023-04-25T06:12:13.052+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task_on_table.select_values scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-04-25T06:12:13.058+0000] {taskinstance.py:1084} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task_on_table.select_values scheduled__2023-04-22T00:00:00+00:00 [queued]>
+[2023-04-25T06:12:13.058+0000] {taskinstance.py:1282} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T06:12:13.059+0000] {taskinstance.py:1283} INFO - Starting attempt 1 of 1
+[2023-04-25T06:12:13.059+0000] {taskinstance.py:1284} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-25T06:12:13.068+0000] {taskinstance.py:1303} INFO - Executing <Task(PostgresOperator): select_values> on 2023-04-22 00:00:00+00:00
+[2023-04-25T06:12:13.072+0000] {standard_task_runner.py:55} INFO - Started process 192 to run task
+[2023-04-25T06:12:13.077+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'task_on_table', 'select_values', 'scheduled__2023-04-22T00:00:00+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/Task1.py', '--cfg-path', '/tmp/tmpnbrjua5i']
+[2023-04-25T06:12:13.079+0000] {standard_task_runner.py:83} INFO - Job 66: Subtask select_values
+[2023-04-25T06:12:13.142+0000] {task_command.py:388} INFO - Running <TaskInstance: task_on_table.select_values scheduled__2023-04-22T00:00:00+00:00 [running]> on host 1d6f684d238a
+[2023-04-25T06:12:13.218+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=task_on_table
+AIRFLOW_CTX_TASK_ID=select_values
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-22T00:00:00+00:00
+[2023-04-25T06:12:13.219+0000] {sql.py:254} INFO - Executing: 
+            SELECT * FROM users;
+        
+[2023-04-25T06:12:13.227+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-04-25T06:12:13.337+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-04-25T06:12:13.342+0000] {sql.py:375} INFO - Running statement: 
+            SELECT * FROM users;
+        , parameters: None
+[2023-04-25T06:12:13.343+0000] {sql.py:384} INFO - Rows affected: 12
+[2023-04-25T06:12:13.366+0000] {taskinstance.py:1326} INFO - Marking task as SUCCESS. dag_id=task_on_table, task_id=select_values, execution_date=20230422T000000, start_date=20230425T061213, end_date=20230425T061213
+[2023-04-25T06:12:13.409+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-25T06:12:13.425+0000] {taskinstance.py:2585} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,42 @@
+[2023-04-22T00:46:13.730+0000] {processor.py:153} INFO - Started process (PID=842) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T00:46:13.732+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T00:46:13.734+0000] {logging_mixin.py:137} INFO - [2023-04-22T00:46:13.734+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T00:46:13.780+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T00:46:13.826+0000] {logging_mixin.py:137} INFO - [2023-04-22T00:46:13.826+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T00:46:13.846+0000] {logging_mixin.py:137} INFO - [2023-04-22T00:46:13.846+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T00:46:13.859+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.133 seconds
+[2023-04-22T02:08:39.041+0000] {processor.py:153} INFO - Started process (PID=863) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T02:08:39.043+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T02:08:39.044+0000] {logging_mixin.py:137} INFO - [2023-04-22T02:08:39.044+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T02:08:39.060+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T02:08:39.080+0000] {logging_mixin.py:137} INFO - [2023-04-22T02:08:39.080+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T02:08:39.099+0000] {logging_mixin.py:137} INFO - [2023-04-22T02:08:39.098+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T02:08:39.109+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.072 seconds
+[2023-04-22T03:31:36.401+0000] {processor.py:153} INFO - Started process (PID=880) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T03:31:36.403+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T03:31:36.404+0000] {logging_mixin.py:137} INFO - [2023-04-22T03:31:36.404+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T03:31:36.463+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T03:31:36.493+0000] {logging_mixin.py:137} INFO - [2023-04-22T03:31:36.493+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T03:31:36.526+0000] {logging_mixin.py:137} INFO - [2023-04-22T03:31:36.526+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T03:31:36.549+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.160 seconds
+[2023-04-22T04:54:53.364+0000] {processor.py:153} INFO - Started process (PID=897) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T04:54:53.365+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T04:54:53.366+0000] {logging_mixin.py:137} INFO - [2023-04-22T04:54:53.366+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T04:54:53.382+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T04:54:53.402+0000] {logging_mixin.py:137} INFO - [2023-04-22T04:54:53.402+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T04:54:53.419+0000] {logging_mixin.py:137} INFO - [2023-04-22T04:54:53.419+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T04:54:53.431+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.071 seconds
+[2023-04-22T12:14:22.585+0000] {processor.py:153} INFO - Started process (PID=166) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:22.621+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T12:14:22.639+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:22.639+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:22.852+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:23.161+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:23.161+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T12:14:23.308+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:23.308+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T12:14:23.368+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.834 seconds
+[2023-04-22T12:14:53.562+0000] {processor.py:153} INFO - Started process (PID=184) to work on /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:53.563+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/Task2.py for tasks to queue
+[2023-04-22T12:14:53.564+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:53.564+0000] {dagbag.py:532} INFO - Filling up the DagBag from /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:53.591+0000] {processor.py:753} INFO - DAG(s) dict_keys(['task_on_email']) retrieved from /opt/airflow/dags/Task2.py
+[2023-04-22T12:14:53.621+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:53.621+0000] {dag.py:2693} INFO - Sync 1 DAGs
+[2023-04-22T12:14:53.658+0000] {logging_mixin.py:137} INFO - [2023-04-22T12:14:53.658+0000] {dag.py:3444} INFO - Setting next_dagrun for task_on_email to 2023-04-22T00:00:00+00:00, run_after=2023-04-23T00:00:00+00:00
+[2023-04-22T12:14:53.671+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/Task2.py took 0.113 seconds
